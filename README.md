@@ -1,17 +1,17 @@
 # Metal-Anamoly-Detection
 X-ray Image (any metal region) <br>
-        ↓
-Global preprocessing (contrast + denoise)
-        ↓
-CNN feature extraction (local patches)
-        ↓
-Patch-wise memory of NORMAL metal
-        ↓
-Nearest-neighbor distance
-        ↓
-Anomaly heatmap
-        ↓
-Score + threshold
+        ↓ <br>
+Global preprocessing (contrast + denoise) <br>
+        ↓ <br>
+CNN feature extraction (local patches) <br>
+        ↓ <br>
+Patch-wise memory of NORMAL metal <br>
+        ↓ <br>
+Nearest-neighbor distance <br>
+        ↓ <br>
+Anomaly heatmap <br>
+        ↓ <br>
+Score + threshold <br>
 
 
 # 1. Install Requirements
