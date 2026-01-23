@@ -2,15 +2,15 @@
 X-ray Image (any metal region) <br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;        ↓ <br>
 Global preprocessing (contrast + denoise) <br>
-        ↓ <br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;        ↓ <br>
 CNN feature extraction (local patches) <br>
-        ↓ <br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;        ↓ <br>
 Patch-wise memory of NORMAL metal <br>
-        ↓ <br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;        ↓ <br>
 Nearest-neighbor distance <br>
-        ↓ <br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;        ↓ <br>
 Anomaly heatmap <br>
-        ↓ <br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;        ↓ <br>
 Score + threshold <br>
 
 
