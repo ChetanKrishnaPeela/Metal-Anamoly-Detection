@@ -1,6 +1,8 @@
 # Metal-Anamoly-Detection
 X-ray Image (any metal region)
+
         ↓
+        
 Global preprocessing (contrast + denoise)
         ↓
 CNN feature extraction (local patches)
