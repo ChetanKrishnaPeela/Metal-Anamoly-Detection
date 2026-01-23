@@ -56,24 +56,24 @@ for name, layer in model.named_children():
         hooks.append(layer.register_forward_hook(hook))
 
 # 4. Extract Patch Features
-def extract_features(img):
-    img = torch.tensor(img).unsqueeze(0).unsqueeze(0)
-    img = img.repeat(1, 3, 1, 1).to(device)
-
-    features.clear()
-    with torch.no_grad():
-        model(img)
-
-    feats = []
-    for f in features.values():
-        f = torch.nn.functional.interpolate(
-            f, size=(32, 32), mode="bilinear", align_corners=False
-        )
-        feats.append(f)
-
-    feat = torch.cat(feats, dim=1)
-    feat = feat.squeeze(0).permute(1, 2, 0)
-    return feat.reshape(-1, feat.shape[-1]).cpu().numpy()
+        def extract_features(img):
+            img = torch.tensor(img).unsqueeze(0).unsqueeze(0)
+            img = img.repeat(1, 3, 1, 1).to(device)
+        
+            features.clear()
+            with torch.no_grad():
+                model(img)
+        
+            feats = []
+            for f in features.values():
+                f = torch.nn.functional.interpolate(
+                    f, size=(32, 32), mode="bilinear", align_corners=False
+                )
+                feats.append(f)
+        
+            feat = torch.cat(feats, dim=1)
+            feat = feat.squeeze(0).permute(1, 2, 0)
+            return feat.reshape(-1, feat.shape[-1]).cpu().numpy()
 # 5. Build Memory Bank (TRAIN)
 from sklearn.random_projection import SparseRandomProjection
 
