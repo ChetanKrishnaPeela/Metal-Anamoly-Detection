@@ -1,5 +1,5 @@
 # Metal-Anamoly-Detection
-X-ray Image (any metal region) \n
+X-ray Image (any metal region) <br>
         ↓
 Global preprocessing (contrast + denoise)
         ↓
