@@ -1,4 +1,5 @@
 # Metal-Anamoly-Detection
+<p align="center">
 X-ray Image (any metal region) <br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;        ↓ <br>
 Global preprocessing (contrast + denoise) <br>
@@ -12,6 +13,8 @@ Nearest-neighbor distance <br>
 Anomaly heatmap <br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;        ↓ <br>
 Score + threshold <br>
+</p>
+
 
 
 # 1. Install Requirements
