@@ -3,7 +3,7 @@
 X-ray Image (any metal region) <br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;↓ <br>
 Global preprocessing (contrast + denoise) <br>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;↓ <br>
+↓ <br>
 CNN feature extraction (local patches) <br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;↓ <br>
 Patch-wise memory of NORMAL metal <br>
