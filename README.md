@@ -1,17 +1,17 @@
 # Metal-Anamoly-Detection
 <p align="center">
 X-ray Image (any metal region) <br>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;↓ <br>
+↓ <br>
 Global preprocessing (contrast + denoise) <br>
 ↓ <br>
 CNN feature extraction (local patches) <br>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;↓ <br>
+↓ <br>
 Patch-wise memory of NORMAL metal <br>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;↓ <br>
+↓ <br>
 Nearest-neighbor distance <br>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;↓ <br>
+↓ <br>
 Anomaly heatmap <br>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;↓ <br>
+↓ <br>
 Score + threshold <br>
 </p>
 
